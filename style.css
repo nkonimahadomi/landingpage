@@ -44,14 +44,19 @@
     float: right;
     font-size: 18px;
   }
-  
+  .nav > .nav-links > .login{
+    padding: 14px 40px;
+  }
+  .nav > .nav-links > .register{
+    padding: 13px 30px;
+  }
   .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: black;
   }
-  
+
   .nav > .nav-links > a:hover {
     background-color: #f56bbd;
   }
@@ -547,7 +552,9 @@ hr {
     font-size: 18px;
     line-height: 24px;
 }
-
+.footer-form input{
+    height: 25px;
+}
 .footer-item>ul {
     font-size: 16px;
     line-height: 44px;
@@ -557,10 +564,13 @@ hr {
 .enter {
     background: #F56B8D;
     cursor: pointer;
+    padding: 20px;
+    border: none;
+    width: 30px;
+    border-radius: 20%;
+   
 }
-.icons{
-    /* cursor: pointer; */
-}
+
 
 @media only screen and (max-width: 500px) {
     .header-grid {        
@@ -619,7 +629,6 @@ hr {
    .expan {
     display: flex;
     flex-direction: column-reverse;
-    /* align-items: center; */
     justify-content: center;
     gap: 30px;
     padding: 20px ;
@@ -656,7 +665,7 @@ hr {
     justify-content: space-between;
     margin-top: 50px;
 }
-#footer-grid {
+.footer-grid {
     padding: 10px 30px;
     background: #c4c4c4;
 }
@@ -716,5 +725,15 @@ p {
     padding: 50px;
     justify-content: center;
 }
-
+.enter {
+    background: #F56B8D;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    width: 20px;
+    border-radius: 20%;
+}
+.icons{
+    margin-top: 10px;
+}
 }
