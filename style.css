@@ -107,13 +107,13 @@
   }
 .header-grid {
     grid-area: header;
-    border: solid black;
     background: url(./Excell/Images/header-background.png);
     background-repeat: no-repeat;
     height: 83vh;
     background-size: cover;
     background-position: center;
     position: relative;
+    border: none;
 }
 
 .login {
@@ -149,10 +149,10 @@
     background: url(./Excell/Images/Mask.png);
     border-radius: 50%;
     position: absolute;
-    width: 450px;
-    height: 450px;
-    left: 50px;
-    top: 70px;
+    width: 400px;
+    height: 400px;
+    left: 120px;
+    top: 80px;
     z-index: 1;
     opacity: 0.5;
     background: #336EE1;
@@ -210,7 +210,7 @@
 .main-cover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
 
    }
@@ -262,6 +262,7 @@
     font-size: 24px;
     line-height: 52px;
     text-align: left;
+    padding-left: 10px;
 }
 
 .grid-item-1 h4 {
@@ -270,6 +271,7 @@
     color: #999999;
     margin-bottom: 20px;
     text-align: left;
+    padding-left: 10px;
 }
 
  .grid-item-1 p {
@@ -277,6 +279,8 @@
     line-height: 24px;
     color: #333333;
     text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 } 
 .grid-item-1{
     grid-column: 1 / 3;
@@ -370,11 +374,12 @@ hr {
 }
 
 .grid-item-2>button {
-    padding: 15px 30px;
+    padding: 20px 30px;
     color: white;
     width: 100%;
     background: #F56B8D;
     cursor: pointer;
+    border: none;
 }
 
 #file {
@@ -382,6 +387,7 @@ hr {
     height: 10px;
     margin: 0px;
     background: #ECECEC;
+    margin-left: 10px;
 }
 
 .main-grid>button {
@@ -407,9 +413,9 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-position: center;
+    background-position: cover;
     padding: 50px;
-    margin-top: 20px;
+    
 
 }
 
@@ -430,7 +436,7 @@ hr {
     font-style: normal;
     font-size: 40px;
     color: #333333;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .graph-text>p {
@@ -472,14 +478,14 @@ hr {
     align-items: center;
     justify-content: space-around;
     width: 750px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .top {
     width: 250px;
     font-size: 24px;
     line-height: 44px;
-    text-align: justify;
+    /* text-align: justify; */
     font-family: 'Josefin Sans';
 }
 
@@ -526,7 +532,12 @@ hr {
     justify-content: space-between;
     margin-top: 50px;
 }
-
+.footer-form p{
+    font-size: 15px;
+}
+.footer-form button{
+    padding: 2px;
+}
 .footer-item>h2 {
     font-size: 18px;
     line-height: 24px;
@@ -542,6 +553,9 @@ hr {
     background: #F56B8D;
     cursor: pointer;
 }
+.icons{
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 500px) {
     .header-grid {        
@@ -550,7 +564,7 @@ hr {
     }
     .header-content{
         z-index: 10;
-        margin: 80px 60px;
+        margin: 80px 70px;
         color: white;
         width: 250px;
     }
@@ -583,13 +597,13 @@ hr {
         align-items: flex-start;
         padding: 20px;
         width: 100%;
-    
+        margin-top: 0px;
     }
     
 .graph-text>h3 {
-    font-size: 40px;
+    font-size: 30px;
     color: #333333;
-    text-align: justify;
+    /* text-align: justify; */
 }
    .second{
     background-size: 140px;
@@ -625,14 +639,26 @@ hr {
     grid-template-columns: 1fr 1fr ;
     gap: 50px;
 }
+.footer-form p{
+    font-size: 15px;
+}
+.footer-form button{
+    padding: 2px; 
+}
+.footer-icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 #footer-grid {
     padding: 10px 30px;
     background: #c4c4c4;
 }
 .circle {
-    width: 300px;
-    height: 300px;
-    left: 10px;
+    width: 310px;
+    height: 310px;
+    left: 20px;
     top: 100px;
 }
 
@@ -683,7 +709,6 @@ p {
     height: 80vh;
     width: 100%;
     padding: 50px;
-    margin-top: 70px;
     justify-content: center;
 }
 
